@@ -111,6 +111,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Goteborg.Octokit.Sardin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Goteborg.Octokit.Default", "..\..\R5T.Goteborg.Octokit.Default\source\R5T.Goteborg.Octokit.Default\R5T.Goteborg.Octokit.Default.csproj", "{E588B50F-46FA-469D-827F-D2D751197F23}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Goteborg.Standard", "..\..\R5T.Goteborg.Standard\source\R5T.Goteborg.Standard\R5T.Goteborg.Standard.csproj", "{04823604-EB76-4599-9B37-095259496DF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -757,6 +759,18 @@ Global
 		{E588B50F-46FA-469D-827F-D2D751197F23}.Release|x64.Build.0 = Release|Any CPU
 		{E588B50F-46FA-469D-827F-D2D751197F23}.Release|x86.ActiveCfg = Release|Any CPU
 		{E588B50F-46FA-469D-827F-D2D751197F23}.Release|x86.Build.0 = Release|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Debug|x64.Build.0 = Debug|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Debug|x86.Build.0 = Debug|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Release|x64.ActiveCfg = Release|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Release|x64.Build.0 = Release|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Release|x86.ActiveCfg = Release|Any CPU
+		{04823604-EB76-4599-9B37-095259496DF6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -813,6 +827,7 @@ Global
 		{C15F99D3-EFB3-4959-8EEE-E1D6C3E0A2FA} = {8AE32190-4E08-4A82-B1F2-9FC7632E2B7B}
 		{66155478-9F0B-4B3D-A2A4-24CB73F86576} = {8AE32190-4E08-4A82-B1F2-9FC7632E2B7B}
 		{E588B50F-46FA-469D-827F-D2D751197F23} = {8AE32190-4E08-4A82-B1F2-9FC7632E2B7B}
+		{04823604-EB76-4599-9B37-095259496DF6} = {8AE32190-4E08-4A82-B1F2-9FC7632E2B7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21F62195-B428-4147-9CC0-530B88CE1E62}
