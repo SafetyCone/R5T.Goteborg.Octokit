@@ -11,7 +11,8 @@ namespace R5T.Goteborg.Octokit.Construction
     {
         static void Main(string[] args)
         {
-            Program.TestGitHubOperatorCreateRepository();
+            //Program.TestGitHubOperatorCreateRepository();
+            Program.TestRepositoryExists();
             //Program.TestGitHubOperatorDeleteRepository();
         }
 
@@ -22,6 +23,21 @@ namespace R5T.Goteborg.Octokit.Construction
             var gitHubOperator = serviceProvider.GetRequiredService<IGitHubOperator>();
 
             // Delete a repository.
+            gitHubOperator.DeleteRepository(Constants.Owner, Constants.TestingRepositoryName).Wait();
+        }
+
+        private static void TestRepositoryExists()
+        {
+            var serviceProvider = Program.GetServiceProvider();
+
+            var gitHubOperator = serviceProvider.GetRequiredService<IGitHubOperator>();
+
+            // Create a repository.
+            var name = Constants.TestingRepositoryName;
+
+            var exists = gitHubOperator.RepositoryExists(Constants.Owner, name).Result;
+
+            Console.WriteLine($"Repository '{name}' exists: {exists}");
         }
 
         private static void TestGitHubOperatorCreateRepository()

@@ -8,6 +8,6 @@ namespace R5T.Goteborg.Octokit.Construction
         public const string TestingRepositoryName = "Testing.Repository";
         public const string TestingRepositoryDescription = "Repository for testing.";
 
-        public const string User = "MinexAutomation";
+        public const string Owner = "MinexAutomation";
     }
 }
