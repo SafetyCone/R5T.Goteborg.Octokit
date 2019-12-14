@@ -72,5 +72,25 @@ namespace R5T.Goteborg.Octokit
 
             await gitHubClient.Repository.Delete(owner, name);
         }
+
+        public async Task<string> GetRepositoryCheckoutURL(string owner, string name)
+        {
+            var gitHubClient = this.GitHubClientProvider.GetGitHubClient();
+
+            var repository = await gitHubClient.Repository.Get(owner, name);
+
+            var checkoutURL = repository.CloneUrl;
+            return checkoutURL;
+        }
+
+        public async Task<string> GetRepositoryCheckoutURL(long repositoryID)
+        {
+            var gitHubClient = this.GitHubClientProvider.GetGitHubClient();
+
+            var repository = await gitHubClient.Repository.Get(repositoryID);
+
+            var checkoutURL = repository.CloneUrl;
+            return checkoutURL;
+        }
     }
 }
