@@ -9,5 +9,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Goteborg.Base\source\R5T.Goteborg.Base\R5T.Goteborg.Base.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Opatia\source\R5T.Opatia\R5T.Opatia.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Polidea\source\R5T.Polidea\R5T.Polidea.csproj" />
   </ItemGroup>
 </Project>
