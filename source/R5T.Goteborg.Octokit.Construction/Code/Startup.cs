@@ -5,11 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 using R5T.Coventry;
-using R5T.Polidea.Sardinia;
-using R5T.Polidea.Suebia;
-
-using R5T.Goteborg.Octokit.Default;
-using R5T.Goteborg.Octokit.Sardinia;
+using R5T.Goteborg.Standard;
 
 
 namespace R5T.Goteborg.Octokit.Construction
@@ -26,7 +22,7 @@ namespace R5T.Goteborg.Octokit.Construction
             base.ConfigureConfigurationBody(configurationBuilder, configurationServicesProvider);
 
             configurationBuilder
-                .AddGitHubAuthenticationConfiguration(configurationServicesProvider)
+                .AddGitHubConfiguration(configurationServicesProvider)
                 ;
         }
 
@@ -35,9 +31,7 @@ namespace R5T.Goteborg.Octokit.Construction
             base.ConfigureServicesBody(services);
 
             services
-                .AddGitHubAuthentication()
-                .AddGitHubConfiguration()
-                .AddDefaultOctokitGitHubOperatorServices<ConfigurationBasedProductHeaderValueProvider>()
+                .AddGitHubOperator()
                 ;
         }
     }
