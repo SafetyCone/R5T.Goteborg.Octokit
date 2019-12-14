@@ -4,4 +4,10 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1701;1702;1591;1573</NoWarn>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Octokit" Version="0.36.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.Goteborg.Base\source\R5T.Goteborg.Base\R5T.Goteborg.Base.csproj" />
+  </ItemGroup>
 </Project>
