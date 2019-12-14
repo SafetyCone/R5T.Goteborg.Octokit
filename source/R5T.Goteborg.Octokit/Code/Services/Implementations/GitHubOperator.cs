@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 using Octokit;
@@ -48,6 +49,28 @@ namespace R5T.Goteborg.Octokit
             var createdRepository = await gitHubClient.Repository.Create(newRepository);
 
             return createdRepository.Id;
+        }
+
+        public async Task<bool> RepositoryExists(string owner, string name)
+        {
+            var gitHubClient = this.GitHubClientProvider.GetGitHubClient();
+
+            var searchRequest = new SearchRepositoriesRequest(name)
+            {
+                User = owner,
+            };
+
+            var searchResult = await gitHubClient.Search.SearchRepo(searchRequest);
+
+            var exists = searchResult.Items.Where(x => x.Name == name).Count() > 0;
+            return exists;
+        }
+
+        public async Task DeleteRepository(string owner, string name)
+        {
+            var gitHubClient = this.GitHubClientProvider.GetGitHubClient();
+
+            await gitHubClient.Repository.Delete(owner, name);
         }
     }
 }
