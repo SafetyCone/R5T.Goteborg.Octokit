@@ -1,7 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\R5T.Goteborg.Octokit\R5T.Goteborg.Octokit.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Coventry\source\R5T.Coventry\R5T.Coventry.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Goteborg.Octokit.Default\source\R5T.Goteborg.Octokit.Default\R5T.Goteborg.Octokit.Default.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Goteborg.Octokit.Sardinia\source\R5T.Goteborg.Octokit.Sardinia\R5T.Goteborg.Octokit.Sardinia.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Polidea.Sardinia\source\R5T.Polidea.Sardinia\R5T.Polidea.Sardinia.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Polidea.Suebia\source\R5T.Polidea.Suebia\R5T.Polidea.Suebia.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <PropertyGroup>
