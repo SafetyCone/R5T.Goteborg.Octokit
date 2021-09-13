@@ -33,7 +33,7 @@ namespace R5T.Goteborg.Octokit
                     break;
 
                 default:
-                    throw new Exception(EnumHelper.UnexpectedEnumerationValueMessage(repository.License));
+                    throw new Exception(EnumerationHelper.UnexpectedEnumerationValueMessage(repository.License));
             }
 
             var @private = repository.Visibility == GitHubRepositoryVisibility.Private ? true : false; // Private if private, otherwise public.
