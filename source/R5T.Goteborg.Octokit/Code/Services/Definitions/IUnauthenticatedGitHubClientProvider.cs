@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 
-using Octokit;
+using Octokit;using R5T.T0064;
 
 
 namespace R5T.Goteborg.Octokit
-{
-    public interface IUnauthenticatedGitHubClientProvider
+{[ServiceDefinitionMarker]
+    public interface IUnauthenticatedGitHubClientProvider:IServiceDefinition
     {
         GitHubClient GetUnauthenticatedGitHubClient();
     }

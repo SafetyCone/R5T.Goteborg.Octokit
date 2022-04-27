@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
 using Octokit;
 
-using R5T.Magyar;
+using R5T.Magyar;using R5T.T0064;
 
 
 namespace R5T.Goteborg.Octokit
-{
-    public class GitHubOperator : IGitHubOperator
+{[ServiceImplementationMarker]
+    public class GitHubOperator : IGitHubOperator,IServiceImplementation
     {
         private IGitHubClientProvider GitHubClientProvider { get; }
 
